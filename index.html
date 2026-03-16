@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cosmos</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body
+    class="font-sans bg-deep-space text-white overflow-x-hidden leading-relaxed"
+  >
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 h-20 flex items-center bg-header-bg/90 backdrop-blur-xl border-b border-(--color-border-subtle)"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex items-center justify-between w-full"
+      >
+        <div class="flex items-center cursor-pointer gap-1">
+          <div
+            class="flex items-center justify-center text-2xl w-11 h-11 rounded-full bg-linear-to-br from-nebula to-starlight"
+          >
+            🚀
+          </div>
+
+          <span class="text-lg font-bold tracking-[0.15em] text-text-primary">
+            COSMOS
+          </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-8">
+          <a
+            class="text-sm font-normal text-text-primary border-b-2 border-starlight pb-1 transition-all duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="missions.html"
+            >Missions</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="spacecraft.html"
+            >Spacecraft</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-text-primary text-xl w-11 h-11 flex items-center justify-center"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-20 left-0 w-full bg-header-bg border-b border-(--color-border-subtle) py-6"
+      >
+        <nav class="flex flex-col items-center gap-6">
+          <a
+            class="text-sm font-normal text-text-primary transition-all duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="missions.html"
+            >Missions</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="spacecraft.html"
+            >Spacecraft</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="relative bg-cover bg-center pt-40 pb-50 bg-[url('../img/home-banner.png')] overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+        <div class="max-w-200 mx-auto">
+          <!-- Badge -->
+          <div
+            class="inline-flex items-center gap-2 rounded-full mb-6 px-4 py-2 border border-(--color-starlight-border) bg-(--color-white-glass) text-starlight text-sm font-medium backdrop-blur-sm"
+          >
+            <span>☄️</span>
+            <span>Exploring the Unknown</span>
+          </div>
+
+          <!-- Heading -->
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-[64px] font-bold leading-[1.1] mb-6 text-text-primary tracking-[-0.02em]"
+          >
+            Journey
+            <span
+              class="bg-linear-to-r from-text-primary to-starlight bg-clip-text text-transparent"
+            >
+              Beyond
+            </span>
+            <br />
+            the
+            <span
+              class="bg-linear-to-r from-text-primary to-starlight bg-clip-text text-transparent"
+            >
+              Stars
+            </span>
+          </h1>
+
+          <!-- Description -->
+          <p
+            class="text-base md:text-lg font-normal leading-relaxed mb-10 text-text-secondary max-w-150 mx-auto"
+          >
+            Discover the next generation of space exploration. From Mars
+            missions to deep space telescopes, we're pushing the boundaries of
+            human knowledge.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap justify-center gap-4">
+            <button
+              class="font-medium transition-all duration-300 bg-starlight text-text-primary px-8 py-3.5 rounded-[40px] text-base [box-shadow:var(--shadow-glow)] hover:scale-105 hover:[box-shadow:var(--shadow-glow-hover)]"
+              onclick="window.location.href = 'missions.html'"
+            >
+              View Missions →
+            </button>
+
+            <button
+              class="font-medium transition-all duration-300 border border-border-light text-text-primary px-8 py-3.5 rounded-[40px] text-base bg-transparent hover:bg-white-glass-hover"
+              onclick="window.location.href = 'spacecraft.html'"
+            >
+              Our Fleet
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="py-20 md:py-20">
+      <div
+        class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6"
+      >
+        <!-- Stat 1 -->
+        <div
+          class="text-center bg-card-bg border border-card-border rounded-2xl py-10 px-6 backdrop-blur-sm hover:border-starlight/30 transition-colors"
+        >
+          <h3
+            class="text-3xl md:text-[48px] font-bold text-starlight mb-2 tracking-[-0.02em]"
+          >
+            150+
+          </h3>
+
+          <p
+            class="text-sm font-normal text-text-secondary uppercase tracking-widest"
+          >
+            Missions Completed
+          </p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div
+          class="text-center bg-card-bg border border-card-border rounded-2xl py-10 px-6 backdrop-blur-sm hover:border-starlight/30 transition-colors"
+        >
+          <h3
+            class="text-3xl md:text-[48px] font-bold text-starlight mb-2 tracking-[-0.02em]"
+          >
+            12
+          </h3>
+
+          <p
+            class="text-sm font-normal text-text-secondary uppercase tracking-widest"
+          >
+            Active Spacecraft
+          </p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div
+          class="text-center bg-card-bg border border-card-border rounded-2xl py-10 px-6 backdrop-blur-sm hover:border-starlight/30 transition-colors"
+        >
+          <h3
+            class="text-3xl md:text-[48px] font-bold text-starlight mb-2 tracking-[-0.02em]"
+          >
+            4.2B
+          </h3>
+
+          <p
+            class="text-sm font-normal text-text-secondary uppercase tracking-widest"
+          >
+            Km Traveled
+          </p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div
+          class="text-center bg-card-bg border border-card-border rounded-2xl py-10 px-6 backdrop-blur-sm hover:border-starlight/30 transition-colors"
+        >
+          <h3
+            class="text-3xl md:text-[48px] font-bold text-starlight mb-2 tracking-[-0.02em]"
+          >
+            28
+          </h3>
+
+          <p
+            class="text-sm font-normal text-text-secondary uppercase tracking-widest"
+          >
+            Countries
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-header-bg border-t border-footer-border pt-16 pb-10 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-10"
+        >
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center cursor-pointer gap-1">
+            <div
+              class="flex items-center justify-center text-2xl w-11 h-11 rounded-full bg-linear-to-br from-nebula to-starlight"
+            >
+              🚀
+            </div>
+
+            <span class="text-lg font-bold tracking-[0.15em] text-text-primary">
+              COSMOS
+            </span>
+          </a>
+
+          <!-- Navigation -->
+          <nav class="flex justify-center flex-wrap gap-6 md:gap-8">
+            <a
+              class="text-sm font-normal text-text-primary transition-all duration-300"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+              href="missions.html"
+              >Missions</a
+            >
+            <a
+              class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+              href="spacecraft.html"
+              >Spacecraft</a
+            >
+            <a
+              class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+              href="gallery.html"
+              >Gallery</a
+            >
+          </nav>
+
+          <!-- Social Icons -->
+          <div class="flex justify-center gap-4">
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-footer-border w-full my-10"></div>
+
+        <!-- Copyright -->
+        <div class="text-center text-xs text-text-muted">
+          <p class="mb-1">
+            © 2026 Cosmos Space Exploration. All rights reserved.
+          </p>
+
+          <p class="italic">Designed by Vince</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/togglemenu.js"></script>
+  </body>
+</html>

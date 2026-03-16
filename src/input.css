@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* COLORS & FONTS */
+@theme {
+  /* Primary Colors */
+  --color-deep-space: #0a0a0f;
+  --color-header-bg: #0b0b12;
+  --color-card-bg: #121217;
+  --color-card-border: #18181d;
+  --color-footer-border: #232739;
+
+  /* Accent Colors */
+  --color-starlight: #e94560;
+  --color-starlight-glow: rgba(233, 69, 96, 0.4);
+  --color-starlight-border: rgba(233, 69, 96, 0.4);
+  --color-nebula: #16213e;
+
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0a5b9;
+  --color-text-muted: rgba(160, 165, 185, 0.7);
+
+  /* UI Colors */
+  --color-white-glass: rgba(255, 255, 255, 0.05);
+  --color-white-glass-hover: rgba(255, 255, 255, 0.1);
+  --color-border-light: rgba(255, 255, 255, 0.2);
+  --color-border-subtle: rgba(255, 255, 255, 0.05);
+
+  /* Fonts */
+  --font-sans: "Inter";
+  --font-display: "SpaceGrotesk";
+
+  /* Shadows */
+  --shadow-glow: 0 0 25px var(--color-starlight-glow);
+  --shadow-glow-hover: 0 0 35px var(--color-starlight-glow);
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter_18pt-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+/* BASE STYLES */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-deep-space);
+  color: var(--color-text-primary);
+}

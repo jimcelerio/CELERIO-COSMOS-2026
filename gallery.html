@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery - Cosmos</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body
+    class="font-sans bg-deep-space text-white overflow-x-hidden leading-relaxed"
+  >
+    <!-- Stars Background -->
+    <div
+      class="fixed inset-0 bg-[url('../img/home-banner.png')] bg-cover bg-center opacity-30 -z-10"
+    ></div>
+    <div class="fixed inset-0 bg-deep-space/60 -z-10"></div>
+
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 w-full z-50 h-20 flex items-center bg-header-bg/90 backdrop-blur-xl border-b border-(--color-border-subtle)"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex items-center justify-between w-full"
+      >
+        <div class="flex items-center cursor-pointer gap-1">
+          <div
+            class="flex items-center justify-center text-2xl w-11 h-11 rounded-full bg-linear-to-br from-nebula to-starlight"
+          >
+            🚀
+          </div>
+
+          <span class="text-lg font-bold tracking-[0.15em] text-text-primary">
+            COSMOS
+          </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-8">
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="missions.html"
+            >Missions</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="spacecraft.html"
+            >Spacecraft</a
+          >
+          <a
+            class="text-sm font-normal text-text-primary border-b-2 border-starlight pb-1 transition-all duration-300"
+            href="gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          class="md:hidden text-text-primary text-xl w-11 h-11 flex items-center justify-center"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute top-20 left-0 w-full bg-header-bg border-b border-(--color-border-subtle) py-6"
+      >
+        <nav class="flex flex-col items-center gap-6">
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="missions.html"
+            >Missions</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="spacecraft.html"
+            >Spacecraft</a
+          >
+          <a
+            class="text-sm font-normal text-text-primary transition-all duration-300"
+            href="gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="pt-40 pb-16 relative">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h1
+          class="font-display font-black text-4xl sm:text-5xl md:text-6xl leading-[1.1] mb-6 text-text-primary tracking-[-0.02em]"
+        >
+          Cosmic Gallery
+        </h1>
+
+        <p
+          class="text-base md:text-lg font-normal leading-relaxed text-text-secondary max-w-150 mx-auto"
+        >
+          Breathtaking images from across the universe captured by our missions
+          and observatories.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <main class="pb-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Gallery Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[200px]">
+          <!-- Large Vertical Image (spans 2 rows, 2 columns) -->
+          <div class="md:row-span-2 md:col-span-2">
+            <div
+              class="w-full h-full rounded-2xl overflow-hidden bg-card-bg border border-card-border group"
+            >
+              <img
+                src="./img/starsorangegreen.png"
+                alt="Carina Nebula"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Top Right Square Image 1 - ISS Cupola -->
+          <div class="md:col-span-1">
+            <div
+              class="w-full h-full rounded-2xl overflow-hidden bg-card-bg border border-card-border group"
+            >
+              <img
+                src="./img/keyachievements4.png"
+                alt="Earth from ISS Cupola"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Top Right Square Image 2 - Jupiter -->
+          <div class="md:col-span-1">
+            <div
+              class="w-full h-full rounded-2xl overflow-hidden bg-card-bg border border-card-border group"
+            >
+              <img
+                src="./img/keyachievements2.png"
+                alt="Jupiter Storms"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Wide Horizontal Image (spans 2 columns) -->
+          <div class="md:col-span-2">
+            <div
+              class="w-full h-full rounded-2xl overflow-hidden bg-card-bg border border-card-border group"
+            >
+              <img
+                src="./img/starsorangegreen.png"
+                alt="Carina Nebula Wide"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Second Row - Vertical Image (spans 2 rows) -->
+          <div class="md:row-span-2 md:col-span-1">
+            <div
+              class="w-full h-full rounded-2xl overflow-hidden bg-card-bg border border-card-border group"
+            >
+              <img
+                src="./img/starslightblue.png"
+                alt="Milky Way Galaxy"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          <!-- Square Star Field -->
+          <div class="md:col-span-1">
+            <div
+              class="w-full h-full rounded-2xl overflow-hidden bg-card-bg border border-card-border group"
+            >
+              <img
+                src="./img/starsdark.png"
+                alt="Deep Space Star Field"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer
+      class="bg-header-bg border-t border-footer-border pt-16 pb-10 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-10"
+        >
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center cursor-pointer gap-1">
+            <div
+              class="flex items-center justify-center text-2xl w-11 h-11 rounded-full bg-linear-to-br from-nebula to-starlight"
+            >
+              🚀
+            </div>
+
+            <span class="text-lg font-bold tracking-[0.15em] text-text-primary">
+              COSMOS
+            </span>
+          </a>
+
+          <!-- Navigation -->
+          <nav class="flex justify-center flex-wrap gap-6 md:gap-8">
+            <a
+              class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+              href="missions.html"
+              >Missions</a
+            >
+            <a
+              class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+              href="spacecraft.html"
+              >Spacecraft</a
+            >
+            <a
+              class="text-sm font-normal text-text-primary transition-all duration-300"
+              href="gallery.html"
+              >Gallery</a
+            >
+          </nav>
+
+          <!-- Social Icons -->
+          <div class="flex justify-center gap-4">
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              class="flex items-center justify-center transition-all duration-300 w-10 h-10 rounded-full bg-card-border text-text-secondary hover:text-text-primary hover:bg-white-glass-hover"
+              href="#"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-footer-border w-full my-10"></div>
+
+        <!-- Copyright -->
+        <div class="text-center text-xs text-text-muted">
+          <p class="mb-1">
+            © 2026 Cosmos Space Exploration. All rights reserved.
+          </p>
+
+          <p class="italic">Designed by Vince</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/togglemenu.js"></script>
+  </body>
+</html>
