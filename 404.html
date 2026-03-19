@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>404 - Page Not Found | Cosmos</title>
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body
+    class="font-sans bg-deep-space text-white overflow-x-hidden leading-relaxed"
+  >
+    <!-- Stars Background -->
+    <div
+      class="fixed inset-0 bg-[url('../img/home-banner.png')] bg-cover bg-center -z-10"
+    ></div>
+
+    <!-- Mobile Header -->
+    <header
+      class="md:hidden fixed top-0 left-0 w-full z-50 h-20 flex items-center bg-header-bg/90 backdrop-blur-xl border-b border-(--color-border-subtle)"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 flex items-center justify-between w-full"
+      >
+        <a href="index.html" class="flex items-center cursor-pointer gap-1">
+          <div
+            class="flex items-center justify-center text-2xl w-11 h-11 rounded-full bg-linear-to-br from-nebula to-starlight"
+          >
+            🚀
+          </div>
+
+          <span class="text-lg font-bold tracking-[0.15em] text-text-primary">
+            COSMOS
+          </span>
+        </a>
+
+        <button
+          id="menu-btn"
+          class="text-text-primary text-xl w-11 h-11 flex items-center justify-center"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden absolute top-20 left-0 w-full bg-header-bg border-b border-(--color-border-subtle) py-6"
+      >
+        <nav class="flex flex-col items-center gap-6">
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="index.html"
+            >Home</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="missions.html"
+            >Missions</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="spacecraft.html"
+            >Spacecraft</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="gallery.html"
+            >Gallery</a
+          >
+          <a
+            class="text-sm font-normal text-text-secondary hover:text-text-primary transition-all duration-300"
+            href="contact.html"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- 404 CONTENT -->
+    <main class="min-h-screen flex items-center justify-center pt-20 pb-10">
+      <div class="max-w-7xl mx-auto px-6 w-full">
+        <div class="flex flex-col items-center text-center">
+          <!-- Astronaut Icon -->
+          <div
+            class="mb-8 border-starlight-border border-3 rounded-full p-7 drop-shadow-[0_0_100px_rgba(233,69,96,0.5)]"
+          >
+            <div
+              class="relative w-28 h-28 md:w-36 md:h-36 rounded-full bg-linear-to-br from-starlight to-nebula flex items-center justify-center shadow-glow"
+            >
+              <div
+                class="absolute inset-0 rounded-full border border-starlight/50 shadow-glow"
+              ></div>
+              <span class="text-5xl md:text-6xl">👨‍🚀</span>
+            </div>
+          </div>
+
+          <!-- 404 Number -->
+          <h1
+            class="font-display font-black text-7xl md:text-[10rem] leading-none bg-gradient-to-r from-white to-starlight bg-clip-text text-transparent mb-6 drop-shadow-[0_0_40px_rgba(233,69,96,0.5)]"
+          >
+            404
+          </h1>
+
+          <!-- Heading -->
+          <h2
+            class="font-display font-bold text-xl md:text-2xl text-text-primary mb-4"
+          >
+            Houston, We Have a Problem
+          </h2>
+
+          <!-- Description -->
+          <p
+            class="text-xs md:text-sm text-text-secondary leading-relaxed max-w-md mx-auto mb-10"
+          >
+            The page you're looking for has drifted into deep space. It might
+            have been moved, deleted, or never existed in this universe.
+          </p>
+
+          <!-- Action Buttons -->
+          <div
+            class="flex flex-col md:flex-row gap-4 mb-12 w-full max-w-xs md:max-w-md"
+          >
+            <a
+              href="index.html"
+              class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-starlight text-white font-semibold rounded-full shadow-glow hover:shadow-glow-hover transition-all duration-300 w-full md:w-fit"
+            >
+              🚀 Return to Earth
+            </a>
+
+            <a
+              href="missions.html"
+              class="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-transparent border border-border-light text-text-primary font-semibold rounded-full hover:bg-white-glass-hover transition-all duration-300 w-full md:w-fit"
+            >
+              📡 Browse Missions
+            </a>
+          </div>
+
+          <!-- Popular Destinations -->
+          <div
+            class="w-full max-w-2xl bg-white-glass/50 border border-border-light/30 rounded-2xl p-6 md:p-8"
+          >
+            <h3
+              class="font-display font-bold text-sm md:text-base text-text-primary mb-6"
+            >
+              Popular Destinations
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <a
+                href="index.html"
+                class="flex items-center gap-3 px-4 py-3 bg-white-glass rounded-xl border border-white-glass hover:border-starlight/30 transition-all duration-300"
+              >
+                <span class="text-xs md:text-sm text-text-secondary"
+                  >🏠 Home Base</span
+                >
+              </a>
+
+              <a
+                href="missions.html"
+                class="flex items-center gap-3 px-4 py-3 bg-white-glass rounded-xl border border-white-glass hover:border-starlight/30 transition-all duration-300"
+              >
+                <span class="text-xs md:text-sm text-text-secondary"
+                  >🎯 Missions</span
+                >
+              </a>
+
+              <a
+                href="spacecraft.html"
+                class="flex items-center gap-3 px-4 py-3 bg-white-glass rounded-xl border border-white-glass hover:border-starlight/30 transition-all duration-300"
+              >
+                <span class="text-xs md:text-sm text-text-secondary"
+                  >🛰️ Spacecraft</span
+                >
+              </a>
+
+              <a
+                href="gallery.html"
+                class="flex items-center gap-3 px-4 py-3 bg-white-glass rounded-xl border border-white-glass hover:border-starlight/30 transition-all duration-300"
+              >
+                <span class="text-xs md:text-sm text-text-secondary"
+                  >🖼️ Gallery</span
+                >
+              </a>
+
+              <a
+                href="contact.html"
+                class="flex items-center gap-3 px-4 py-3 bg-white-glass rounded-xl border border-white-glass hover:border-starlight/30 transition-all duration-300"
+              >
+                <span class="text-xs md:text-sm text-text-secondary"
+                  >📡 Contact</span
+                >
+              </a>
+
+              <a
+                href="missions.html"
+                class="flex items-center gap-3 px-4 py-3 bg-white-glass rounded-xl border border-white-glass hover:border-starlight/30 transition-all duration-300"
+              >
+                <span class="text-xs md:text-sm text-text-secondary"
+                  >📰 News</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./js/togglemenu.js"></script>
+  </body>
+</html>
